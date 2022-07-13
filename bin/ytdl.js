@@ -77,6 +77,9 @@ const printVideoInfo = (info, live) => {
   console.log(label('author: ') + info.videoDetails.author.name);
   console.log(label('avg rating: ') + info.videoDetails.averageRating);
   console.log(label('views: ') + info.videoDetails.viewCount);
+  console.log(label('dislikes: ') + info.videoDetails.dislikes);
+  console.log(label('dislikes: ') + info.videoDetails.likes);
+  console.log(label('clip Progress:') + info.videoDetails.CliProgress);
   if (!live) {
     console.log(label('length: ') + util.toHumanTime(info.videoDetails.lengthSeconds));
   }
